@@ -11,7 +11,7 @@ function ResultBox({ activeTab, output, handleUserTabChange, myHeight }) {
             <Segmented
                 block
                 style={{ margin: "6px 0px 22px 0px" }}
-                options={["STDOUT", "AST", "ASR", "WAT", "CPP", "PY"]}
+                options={["STDOUT", "AST", "ASR", "WAT", "CPP"]}
                 value={activeTab}
                 onChange={(key) => handleUserTabChange(key)}
             />
