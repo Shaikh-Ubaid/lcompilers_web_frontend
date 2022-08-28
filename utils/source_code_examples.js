@@ -53,9 +53,17 @@ print *, "Done."
 end program mandelbrot
 `;
 
+var src_code_expr2 = `def main0():
+    x: i32
+    x = (2+3)*5
+    print(x)
+
+main0()
+`;
 
 var src_code_examples = {
-    src_code_mandel_brot: src_code_mandel_brot
+    src_code_mandel_brot: src_code_mandel_brot,
+    src_code_expr2: src_code_expr2
 };
 
 export default src_code_examples;
