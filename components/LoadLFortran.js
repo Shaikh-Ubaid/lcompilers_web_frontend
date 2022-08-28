@@ -188,7 +188,7 @@ function LoadLFortran({
 
     return (
         <div>
-            <Script src={`${myServer}/lfortran.js`} onLoad={setupLFortran}></Script>
+            <Script src={`./lpython.js`} onLoad={setupLFortran}></Script>
         </div>
     );
 }

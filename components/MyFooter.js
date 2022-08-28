@@ -11,7 +11,7 @@ function MyFooter() {
                 width: "100%",
             }}
         >
-            <a href="https://lfortran.org/">LFortran</a> by <a href="https://lcompilers.org/">LCompilers</a>
+            <a href="https://lpython.org/">LPython</a> by <a href="https://lcompilers.org/">LCompilers</a>
         </Footer>
     );
 }
