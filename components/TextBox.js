@@ -23,7 +23,7 @@ function TextBox({ disabled, sourceCode, setSourceCode, activeTab, handleUserTab
     return (
         <div className="card-container" style={{height: "100%" }}>
             <Tabs tabBarExtraContent={extraOperations} style={{ height: "100%" }}>
-                <TabPane tab="main.f90" key="1" style={{ height: myHeight }}>
+                <TabPane tab="main.py" key="1" style={{ height: myHeight }}>
                     <Editor
                         sourceCode={sourceCode}
                         setSourceCode={setSourceCode}
