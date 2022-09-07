@@ -181,8 +181,8 @@ function LoadLFortran({
     const setupLFortran = useCallback(async () => {
         await setup_lfortran_funcs(lfortran_funcs, myPrint);
         setModuleReady(true);
-        openNotification("LFortran Module Initialized!", "bottomRight");
-        console.log("LFortran Module Initialized!");
+        openNotification("LPython Module Initialized!", "bottomRight");
+        console.log("LPython Module Initialized!");
         handleUserTabChange("STDOUT");
     }, [moduleReady]); // update the callback if the state changes
 
