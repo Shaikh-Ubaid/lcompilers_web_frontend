@@ -40,7 +40,7 @@ var lfortran_funcs = {
 
 export default function Home() {
     const [moduleReady, setModuleReady] = useState(false);
-    const [sourceCode, setSourceCode] = useState(src_code_examples.src_code_expr2);
+    const [sourceCode, setSourceCode] = useState(src_code_examples.src_code_mandel_brot);
     const [activeTab, setActiveTab] = useState("STDOUT");
     const [output, setOutput] = useState("");
     const [myHeight, setMyHeight] = useState("calc(100vh - 170px)")
