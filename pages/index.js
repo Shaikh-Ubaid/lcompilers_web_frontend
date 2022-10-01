@@ -4,7 +4,7 @@ import { useEffect } from "react";
 function index() {
     const router = useRouter();
     useEffect(() => {
-        // router.push("/lpython").then(() => router.reload());
+        router.push("/lpython").then(() => router.reload());
         return () => { }
     }, []);
 
