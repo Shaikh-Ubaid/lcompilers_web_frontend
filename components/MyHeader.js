@@ -15,17 +15,17 @@ function MyHeader() {
             onClick: () => { router.push("/lpython").then(() => router.reload()) }
         },
         {
-            label: `Language`,
-            key: 'language',
+            label: `Select Compiler`,
+            key: 'compiler',
             children: [
                 {
-                    label: "Python",
-                    key: "python",
+                    label: "LPython",
+                    key: "lpython",
                     onClick: () => { router.push(`/lpython`).then(() => router.reload()) }
                 },
                 {
-                    label: "Fortran",
-                    key: "fortran",
+                    label: "LFortran",
+                    key: "lfortran",
                     onClick: () => { router.push(`/lfortran`).then(() => router.reload()) }
                 }
             ],
