@@ -12,7 +12,7 @@ function MyFooter() {
                 width: "100%",
             }}
         >
-            <a href="https://lpython.org/">With <HeartOutlined /> by <a href="https://lcompilers.org/">LCompilers</a>
+            With <HeartOutlined /> by <a href="https://lcompilers.org/">LCompilers</a>
         </Footer>
     );
 }
