@@ -3,10 +3,10 @@ import Head from "next/head";
 function HeadMeta() {
     return (
         <Head>
-            <title>LPython</title>
+            <title>LCompilers</title>
             <meta
                 name="description"
-                content="This is LPython Compiler"
+                content="This is LCompilers Online"
             />
             <link rel="icon" href="/favicon.ico" />
             <meta
