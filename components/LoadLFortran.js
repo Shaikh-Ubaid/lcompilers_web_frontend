@@ -176,7 +176,8 @@ function LoadLFortran({
     lfortran_funcs,
     openNotification,
     myPrint,
-    handleUserTabChange
+    handleUserTabChange,
+    lang
 }) {
     const setupLFortran = useCallback(async () => {
         await setup_lfortran_funcs(lfortran_funcs, myPrint);
@@ -188,7 +189,7 @@ function LoadLFortran({
 
     return (
         <div>
-            <Script src={`./lpython.js`} onLoad={setupLFortran}></Script>
+            <Script src={`./${lang}.js`} onLoad={setupLFortran}></Script>
         </div>
     );
 }

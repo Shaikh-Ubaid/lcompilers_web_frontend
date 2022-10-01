@@ -7,7 +7,7 @@ const Editor = dynamic(import('./Editor'), {
   ssr: false
 })
 
-function TextBox({ disabled, sourceCode, setSourceCode, activeTab, handleUserTabChange, myHeight }) {
+function TextBox({ disabled, sourceCode, setSourceCode, activeTab, handleUserTabChange, myHeight, lang }) {
     // const ref = useRef(null);
     // useEffect(() => {
     //     console.log("Hi")
@@ -23,10 +23,11 @@ function TextBox({ disabled, sourceCode, setSourceCode, activeTab, handleUserTab
     return (
         <div className="card-container" style={{height: "100%" }}>
             <Tabs tabBarExtraContent={extraOperations} style={{ height: "100%" }}>
-                <TabPane tab="main.py" key="1" style={{ height: myHeight }}>
+                <TabPane tab={"main" + (lang === "lpython" ? ".py" : ".f90" )} key="1" style={{ height: myHeight }}>
                     <Editor
                         sourceCode={sourceCode}
                         setSourceCode={setSourceCode}
+                        lang={lang}
                     />
                 </TabPane>
 
