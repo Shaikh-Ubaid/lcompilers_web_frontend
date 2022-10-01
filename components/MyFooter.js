@@ -1,3 +1,4 @@
+import { HeartOutlined } from '@ant-design/icons';
 import { Footer } from "antd/lib/layout/layout";
 
 function MyFooter() {
@@ -11,7 +12,7 @@ function MyFooter() {
                 width: "100%",
             }}
         >
-            <a href="https://lpython.org/">LPython</a> by <a href="https://lcompilers.org/">LCompilers</a>
+            <a href="https://lpython.org/">With <HeartOutlined /> by <a href="https://lcompilers.org/">LCompilers</a>
         </Footer>
     );
 }
