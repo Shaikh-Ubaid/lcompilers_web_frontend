@@ -15,7 +15,7 @@ function MyHeader() {
             onClick: () => { router.push("/lpython").then(() => router.reload()) }
         },
         {
-            label: `Select Compiler`,
+            label: `Available Compilers`,
             key: 'compiler',
             children: [
                 {
